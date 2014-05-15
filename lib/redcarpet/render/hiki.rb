@@ -117,11 +117,11 @@ module Redcarpet
         when :ordered
           # FIXME
           #"\n"
-          content
+          "\n#{content}"
         when :unordered
           # FIXME
           #"\n"
-          content
+          "\n#{content}"
         end
       end
 
