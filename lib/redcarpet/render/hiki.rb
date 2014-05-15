@@ -93,11 +93,11 @@ module Redcarpet
       end
 
       def double_emphasis(text)
-        "''#{escape_inline(text)}''"
+        "'''#{escape_inline(text)}'''"
       end
 
       def emphasis(text)
-        "'#{escape_inline(text)}'"
+        "''#{escape_inline(text)}''"
       end
 
       def strikethrough(text)

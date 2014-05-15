@@ -35,5 +35,14 @@ class HikiTest < Test::Unit::TestCase
     assert_equal "\n! AAA\n\n\nBBB\n\n!! ccc\n\n\nddd\n", @markdown.render("#AAA\nBBB\n\n##ccc\n\nddd\n")
   end
 
+  def test_emphasis
+    assert_respond_to @markdown, :render
+    assert_equal "''AAA''", @markdown.render("*AAA*")
+  end
+
+  def test_double_emphasis
+    assert_respond_to @markdown, :render
+    assert_equal "'''AAA'''", @markdown.render("**AAA**")
+  end
 
 end
