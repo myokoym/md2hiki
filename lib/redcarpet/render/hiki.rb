@@ -53,7 +53,7 @@ module Redcarpet
         when 2
           "\n!! #{title}\n"
         when 3
-          "\n!!!! #{title}\n"
+          "\n!!! #{title}\n"
         when 4
           "\n!!!! #{title}\n"
         when 5
