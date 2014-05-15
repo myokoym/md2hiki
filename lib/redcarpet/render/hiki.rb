@@ -115,9 +115,13 @@ module Redcarpet
       def list(content, list_type)
         case list_type
         when :ordered
-          "\n"
+          # FIXME
+          #"\n"
+          content
         when :unordered
-          "\n"
+          # FIXME
+          #"\n"
+          content
         end
       end
 
